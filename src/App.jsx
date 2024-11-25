@@ -1,22 +1,19 @@
-import { Suspense, lazy } from 'react';
-import './App.css';
+import { Suspense, lazy } from "react";
+import "./App.css";
 // import Login from './components/Login';
-const Login = lazy(() => import('./components/Login'));
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Dashboard from './pages/Admin/Dashboard';
-import MainLayout from './pages/Admin/MainLayout';
-import Analytics from './pages/Admin/Analytics';
-import ManageAdAccount from './pages/Admin/Setting/ManageAdAccount';
-import ManageGoogleAccount from './pages/Admin/Setting/ManageGoogleAccount';
-import MasterAdmin from './pages/MasterAdmin/MasterAdmin';
-import ManageUser from './pages/MasterAdmin/ManageUser';
-import MasterDashboard1 from './pages/MasterAdmin/MasterDashboard1';
-import NotFound from './components/NotFound';
-
+const Login = lazy(() => import("./pages/Login"));
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Dashboard from "./pages/Admin/Dashboard";
+import MainLayout from "./pages/Admin/MainLayout";
+import Analytics from "./pages/Admin/Analytics";
+import ManageAdAccount from "./pages/Admin/Setting/ManageAdAccount";
+import ManageGoogleAccount from "./pages/Admin/Setting/ManageGoogleAccount";
+import MasterAdmin from "./pages/MasterAdmin/MasterAdmin";
+import ManageUser from "./pages/MasterAdmin/ManageUser";
+import MasterDashboard1 from "./pages/MasterAdmin/MasterDashboard1";
+import NotFound from "./pages/NotFound";
 
 function App() {
-  
-
   return (
     <Router>
       <div className="wrapper">
@@ -66,5 +63,4 @@ function App() {
   );
 }
 
-
-export default App
+export default App;
